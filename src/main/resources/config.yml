@@ -1,0 +1,27 @@
+# ChatFilter Configuration
+
+# List of forbidden words (case-insensitive)
+forbidden-words:
+  - "badword"
+  - "example"
+
+# List of forbidden regex patterns (case-insensitive)
+forbidden-regex:
+  - "\\b\\d{3}-\\d{2}-\\d{4}\\b"  # SSN pattern example
+
+# Message sent to players when they use forbidden words
+warning-message: "&cYou are not allowed to use that language!"
+
+# Character used to replace forbidden words
+censor-character: "*"
+
+# Enable/disable filtering for different contexts
+filter-chat: true
+filter-signs: true
+filter-books: true
+filter-anvils: true
+
+# Enable logging of all offenses to a file
+# When enabled, creates an 'offenses.log' file in the plugin data folder
+# Logs include timestamp, player name, UUID, context, and original message
+enable-logging: true

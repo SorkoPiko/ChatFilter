@@ -1,0 +1,20 @@
+name: ChatFilter
+version: '1.0-SNAPSHOT'
+main: com.sorkopiko.chatFilter.ChatFilter
+api-version: '1.21'
+authors: [ SorkoPiko ]
+website: sorkopiko.com
+
+commands:
+  chatfilter:
+    description: Main command for ChatFilter plugin
+    usage: /chatfilter reload
+    permission: chatfilter.command
+
+permissions:
+  chatfilter.reload:
+    description: Allows reloading the ChatFilter config
+    default: op
+  chatfilter.bypass:
+    description: Allows bypassing the chat filter
+    default: op
